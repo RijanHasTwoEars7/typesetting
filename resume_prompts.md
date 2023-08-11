@@ -1,0 +1,1 @@
+In latex, could have sections divided into multitple files, and for each section only take the latest 3 entries from that section's file? Something like this could be handy for resume and CVs. 

@@ -1,0 +1,115 @@
+% type of document
+\documentclass[a4paper, 12pt]{article}
+
+% define margins
+\usepackage[left=1in, right=1in, top=1in, bottom=1in]{geometry}
+
+%for hyperlinkes
+\usepackage[hidelinks]{hyperref}
+
+% for fonts
+\usepackage{fontspec}
+\setmainfont{LiberationSans}
+
+% for customizing titles
+\usepackage{titlesec}
+
+% apparently paragraph{} by default makes for crappy formatting, to account for this
+%\titleformat{\paragraph}
+%{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+
+% for text placement perhaps
+\usepackage[absolute]{textpos}
+
+%for color
+\usepackage{xcolor}
+
+% for header
+\usepackage{fancyhdr}
+
+% for justification
+\usepackage{ragged2e}
+
+% set paragraph length
+\setlength{\parskip}{10pt}
+
+
+% define colors
+\definecolor{blue}{RGB}{21,15,212}
+\definecolor{grey}{RGB}{95, 100, 105}
+
+% the variables that will be used
+
+\def\name{Rijan Dhakal}
+\def\phonenum{+1 256-535-3955}
+\def\email{mailto:rijan\_dhakal@outlook.com}
+\def\address{5320 Walmer Street, Mission, KS}
+\def\github{https://github.com/RijanDhakal1010}
+\def\linkedin{https://www.linkedin.com/in/rijan-dhakal-488853224/}
+<<<<<<< HEAD:Templates/cover_letter/Rijan_cover_letter.tex
+\def\companyname{Bart Lab}
+\def\positionurl{https://www.paycomonline.net/v4/ats/web.php/jobs/ViewJobDetails?job=83495&clientkey=0386834D209CD1EA462A147F53A126FF}
+=======
+\def\companyname{UMass Medical School}
+\def\positionurl{https://www.indeed.com/viewjob?from=app-tracker-post_apply-appcard&hl=en&jk=fcefed8958a60ff8&tk=1gr74ujbik1r7800}
+>>>>>>> parent of 9fc2e8a... The cover letter for washu:Templates/cover_letter/cover_letter.tex
+\def\today{\number\day\space\ifcase\month\or January\or February\or March\or April\or May\or June\or July\or August\or September\or October\or November\or December\fi, \number\year}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{\fontsize{32}{36}\selectfont \textcolor{blue}{\name}}
+
+\linespread{1.25}
+
+\begin{document}
+
+\center \small\textcolor{grey}{{\href{\github}{GitHub} $|$ \href{\linkedin}{LinkedIn} $|$ \href{\email}{rijan\_dhakal@outlook.com} $|$ \phonenum}\\[10pt]}
+
+
+\raggedleft
+
+\begin{minipage}[t]{0.2\textwidth}
+    \today
+\end{minipage}
+
+\raggedright
+
+\begin{minipage}[t]{0.5\textwidth}
+    \textbf{\companyname}
+
+    \vspace{\baselineskip}
+
+    Dear recruiter,
+\end{minipage}
+
+\vspace{\baselineskip}
+
+<<<<<<< HEAD:Templates/cover_letter/Rijan_cover_letter.tex
+I am writing to you about this job position: \urlstyle{same}\href{\positionurl}{Laboratory Technician (Full Time) - Bart Lab (via Danforth careers website)}. I recently defended a master’s thesis in plant evolutionary genomics and am looking to connect with researchers in applied crop sciences.
+
+For the last two years, I have spent my time as a student scientist doing basic research trying to understand repeated themes of evolution in green plants. Having spent the last couple of years doing basic research I want to explore the field and research of crop sciences some more before I move forward as a student scientist. This is when I came across Danforth and this job posting.
+
+I spent the last two years learning the power of inferential/comparative genomics and want to get in touch with expertise/research who take the inferences from computational genomics a step further towards real world applications. I am especially interested in learning about the potential that computational biology holds towards aiding small scale agriculture and plant based medicine.
+
+As for my qualifications for the position, I feel confident that I match the job’s requirement. I have been a full time graduate student for the last couple of years. I have worked on my own projects as well as collaborated with small/large groups of scientist to conduct, document and present novel research, both wet lab and dry.
+=======
+I am writing to you about this job position: \urlstyle{same}\href{\positionurl}{Indeed.com}. I recently defended a master’s thesis in evolutionary genomics and am looking for growth opportunities.
+
+My master’s thesis was a bioinformatics project that employed genomics data and data analysis tools (R, Python, BASH) to generate phylogenetic/evolutionary genomics inferences regarding plant evolution. I particularly enjoyed the programming side of things in my master’s thesis and so am interested in this programming-oriented position.
+
+As for my qualifications for the position, I feel confident that I match the job’s requirement. I did an entirely project oriented master’s and finished it a semester early. I am also familiar with the logistical challenges associated with genomics data and how sprawling the files/folders/experiment can get. My master’s thesis was an endeavor in novel research that entailed problem solving and critical thinking skills. Throughout the thesis, I worked under the tutelage of 4 committee-members with broad research interests. I am familiar with the challenges of documenting/presenting/communicating graduate-level scientific research.
+
+I have collaborated with small and large teams using tools such as Python, R, Bash, and various software packages produced and maintained in genomics research. I am familiar with the multiple applications and challenges that arise with programming languages, data analysis tools, and statistical models/methods used to make the most out of the raw data at hand. 
+>>>>>>> parent of 9fc2e8a... The cover letter for washu:Templates/cover_letter/cover_letter.tex
+
+As for the preferred technical skill-set, I am happy to invite you to take a look at my GitHub and see if my code (Python/R/BASH) looks worth your while. 
+
+% Conclude your application letter by thanking the employer for considering you for the position. 
+
+I believe this position would be an excellent opportunity for me to bring together my current skill set and future goals.I would love to hear back from you and see if I am a good fit for this role.
+
+Sincerely,
+
+\name
+
+\end{document}
